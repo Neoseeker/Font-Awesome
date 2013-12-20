@@ -1,0 +1,742 @@
+[class*="icon-"] {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url(/neoassets/vendor/Font-Awesome/sprites/sprites_333333.png);
+	background-repeat: no-repeat;
+}
+.icon-white {
+	background-image: url(/neoassets/vendor/Font-Awesome/sprites/sprites_ffffff.png);
+}
+
+.icon-glass {
+	background-position: 0 0;
+	width: 15px;
+}
+.icon-music {
+	background-position: -29px 0;
+	width: 14px;
+}
+.icon-search {
+	background-position: -57px 0;
+	width: 15px;
+}
+.icon-envelope {
+	background-position: -86px 0;
+	width: 15px;
+}
+.icon-heart {
+	background-position: -115px 0;
+	width: 15px;
+}
+.icon-star {
+	background-position: -144px 0;
+	width: 15px;
+}
+.icon-star-empty {
+	background-position: -173px 0;
+	width: 15px;
+}
+.icon-user {
+	background-position: -202px 0;
+	width: 15px;
+}
+.icon-film {
+	background-position: -231px 0;
+	width: 15px;
+}
+.icon-th-large {
+	background-position: -260px 0;
+	width: 15px;
+}
+.icon-th {
+	background-position: -289px 0;
+	width: 15px;
+}
+.icon-th-list {
+	background-position: -318px 0;
+	width: 14px;
+}
+.icon-ok {
+	background-position: -346px 0;
+	width: 15px;
+}
+.icon-remove {
+	background-position: -375px 0;
+	width: 15px;
+}
+.icon-zoom-in {
+	background-position: 0 -28px;
+}
+.icon-zoom-out {
+	background-position: -29px -28px;
+}
+.icon-off {
+	background-position: -57px -28px;
+}
+.icon-signal {
+	background-position: -86px -28px;
+}
+.icon-cog {
+	background-position: -115px -28px;
+}
+.icon-trash {
+	background-position: -144px -28px;
+}
+.icon-home {
+	background-position: -173px -28px;
+}
+.icon-file-o {
+	background-position: -202px -28px;
+}
+.icon-clock-o {
+	background-position: -231px -28px;
+}
+.icon-road {
+	background-position: -260px -28px;
+}
+.icon-download-alt {
+	background-position: -289px -28px;
+}
+.icon-download {
+	background-position: -318px -28px;
+}
+.icon-upload {
+	background-position: -346px -28px;
+}
+.icon-inbox {
+	background-position: -375px -28px;
+}
+.icon-repeat {
+	background-position: 0 -56px;
+}
+.icon-refresh {
+	background-position: -29px -56px;
+}
+.icon-list-alt {
+	background-position: -57px -56px;
+}
+.icon-lock {
+	background-position: -86px -56px;
+}
+.icon-flag {
+	background-position: -115px -56px;
+}
+.icon-headphones {
+	background-position: -144px -56px;
+}
+.icon-volume-off {
+	background-position: -173px -56px;
+}
+.icon-volume-down {
+	background-position: -202px -56px;
+}
+.icon-volume-up {
+	background-position: -231px -56px;
+}
+.icon-qrcode {
+	background-position: -260px -56px;
+}
+.icon-barcode {
+	background-position: -289px -56px;
+}
+.icon-tag {
+	background-position: -318px -56px;
+}
+.icon-tags {
+	background-position: -346px -56px;
+}
+.icon-book {
+	background-position: -375px -56px;
+}
+.icon-bookmark {
+	background-position: 0 -84px;
+}
+.icon-print {
+	background-position: -29px -84px;
+}
+.icon-camera {
+	background-position: -57px -84px;
+}
+.icon-font {
+	background-position: -86px -84px;
+}
+.icon-bold {
+	background-position: -115px -84px;
+}
+.icon-italic {
+	background-position: -144px -84px;
+}
+.icon-align-left {
+	background-position: -173px -84px;
+}
+.icon-align-center {
+	background-position: -202px -84px;
+}
+.icon-align-right {
+	background-position: -231px -84px;
+}
+.icon-align-justify {
+	background-position: -260px -84px;
+}
+.icon-list {
+	background-position: -289px -84px;
+}
+.icon-dedent {
+	background-position: -318px -84px;
+}
+.icon-indent {
+	background-position: -346px -84px;
+}
+.icon-facetime-video {
+	background-position: -375px -84px;
+}
+.icon-picture {
+	background-position: 0 -112px;
+}
+.icon-pencil {
+	background-position: -29px -112px;
+}
+.icon-map-marker {
+	background-position: -57px -112px;
+}
+.icon-adjust {
+	background-position: -86px -112px;
+}
+.icon-tint {
+	background-position: -115px -112px;
+}
+.icon-edit {
+	background-position: -144px -112px;
+}
+.icon-share {
+	background-position: -173px -112px;
+}
+.icon-check {
+	background-position: -202px -112px;
+}
+.icon-move {
+	background-position: -231px -112px;
+}
+.icon-step-backward {
+	background-position: -260px -112px;
+}
+.icon-fast-backward {
+	background-position: -289px -112px;
+}
+.icon-backward {
+	background-position: -318px -112px;
+}
+.icon-play {
+	background-position: -346px -112px;
+}
+.icon-pause {
+	background-position: -375px -112px;
+}
+.icon-stop {
+	background-position: 0 -140px;
+}
+.icon-forward {
+	background-position: -29px -140px;
+}
+.icon-fast-forward {
+	background-position: -57px -140px;
+}
+.icon-step-forward {
+	background-position: -86px -140px;
+}
+.icon-eject {
+	background-position: -115px -140px;
+}
+.icon-chevron-left {
+	background-position: -144px -140px;
+}
+.icon-chevron-right {
+	background-position: -173px -140px;
+}
+.icon-plus-sign {
+	background-position: -202px -140px;
+}
+.icon-minus-sign {
+	background-position: -231px -140px;
+}
+.icon-remove-sign {
+	background-position: -260px -140px;
+}
+.icon-ok-sign {
+	background-position: -289px -140px;
+}
+.icon-question-sign {
+	background-position: -318px -140px;
+}
+.icon-info-sign {
+	background-position: -346px -140px;
+}
+.icon-screenshot {
+	background-position: -375px -140px;
+}
+.icon-remove-circle {
+	background-position: 0 -168px;
+}
+.icon-ok-circle {
+	background-position: -29px -168px;
+}
+.icon-ban-circle {
+	background-position: -57px -168px;
+}
+.icon-arrow-left {
+	background-position: -86px -168px;
+}
+.icon-arrow-right {
+	background-position: -115px -168px;
+}
+.icon-arrow-up {
+	background-position: -144px -168px;
+}
+.icon-arrow-down {
+	background-position: -173px -168px;
+}
+.icon-share-alt {
+	background-position: -202px -168px;
+}
+.icon-resize-full {
+	background-position: -231px -168px;
+}
+.icon-resize-small {
+	background-position: -260px -168px;
+}
+.icon-plus {
+	background-position: -289px -168px;
+}
+.icon-minus {
+	background-position: -318px -168px;
+}
+.icon-asterisk {
+	background-position: -346px -168px;
+}
+.icon-exclamation-sign {
+	background-position: -375px -168px;
+}
+.icon-gift {
+	background-position: 0 -196px;
+}
+.icon-leaf {
+	background-position: -29px -196px;
+}
+.icon-fire {
+	background-position: -57px -196px;
+}
+.icon-eye-open {
+	background-position: -86px -196px;
+}
+.icon-eye-close {
+	background-position: -115px -196px;
+}
+.icon-warning-sign {
+	background-position: -144px -196px;
+}
+.icon-plane {
+	background-position: -173px -196px;
+}
+.icon-calendar {
+	background-position: -202px -196px;
+}
+.icon-random {
+	background-position: -231px -196px;
+}
+.icon-comment {
+	background-position: -260px -196px;
+}
+.icon-magnet {
+	background-position: -289px -196px;
+}
+.icon-chevron-up {
+	background-position: -318px -196px;
+}
+.icon-chevron-down {
+	background-position: -346px -196px;
+}
+.icon-retweet {
+	background-position: -375px -196px;
+}
+.icon-shopping-cart {
+	background-position: 0 -224px;
+}
+.icon-folder-close {
+	background-position: -29px -224px;
+}
+.icon-folder-open {
+	background-position: -57px -224px;
+}
+.icon-resize-vertical {
+	background-position: -86px -224px;
+}
+.icon-resize-horizontal {
+	background-position: -115px -224px;
+}
+.icon-bar-chart-o {
+	background-position: -144px -224px;
+}
+.icon-key {
+	background-position: -173px -224px;
+}
+.icon-comments {
+	background-position: -202px -224px;
+}
+.icon-thumbs-o-up {
+	background-position: -231px -224px;
+}
+.icon-thumbs-o-down {
+	background-position: -260px -224px;
+}
+.icon-star-half {
+	background-position: -289px -224px;
+}
+.icon-heart-empty {
+	background-position: -318px -224px;
+}
+.icon-signout {
+	background-position: -346px -224px;
+}
+.icon-thumb-tack {
+	background-position: -375px -224px;
+}
+.icon-external-link {
+	background-position: 0 -252px;
+}
+.icon-signin {
+	background-position: -29px -252px;
+}
+.icon-trophy {
+	background-position: -57px -252px;
+}
+.icon-upload-alt {
+	background-position: -86px -252px;
+}
+.icon-phone {
+	background-position: -115px -252px;
+}
+.icon-square-o {
+	background-position: -144px -252px;
+}
+.icon-bookmark-o {
+	background-position: -173px -252px;
+}
+.icon-phone-square {
+	background-position: -202px -252px;
+}
+.icon-unlock {
+	background-position: -231px -252px;
+}
+.icon-rss {
+	background-position: -260px -252px;
+}
+.icon-hdd {
+	background-position: -289px -252px;
+}
+.icon-bullhorn {
+	background-position: -318px -252px;
+}
+.icon-bell {
+	background-position: -346px -252px;
+}
+.icon-certificate {
+	background-position: -375px -252px;
+}
+.icon-circle-arrow-left {
+	background-position: 0 -280px;
+}
+.icon-circle-arrow-right {
+	background-position: -29px -280px;
+}
+.icon-circle-arrow-up {
+	background-position: -57px -280px;
+}
+.icon-circle-arrow-down {
+	background-position: -86px -280px;
+}
+.icon-globe {
+	background-position: -115px -280px;
+}
+.icon-wrench {
+	background-position: -144px -280px;
+}
+.icon-tasks {
+	background-position: -173px -280px;
+}
+.icon-filter {
+	background-position: -202px -280px;
+}
+.icon-briefcase {
+	background-position: -231px -280px;
+}
+.icon-fullscreen {
+	background-position: -260px -280px;
+}
+.icon-group {
+	background-position: -289px -280px;
+}
+.icon-link {
+	background-position: -318px -280px;
+}
+.icon-cloud {
+	background-position: -346px -280px;
+}
+.icon-beaker {
+	background-position: -375px -280px;
+}
+.icon-cut {
+	background-position: 0 -308px;
+}
+.icon-copy {
+	background-position: -29px -308px;
+}
+.icon-paper-clip {
+	background-position: -57px -308px;
+}
+.icon-save {
+	background-position: -86px -308px;
+}
+.icon-bars {
+	background-position: -115px -308px;
+}
+.icon-list-ul {
+	background-position: -144px -308px;
+}
+.icon-list-ol {
+	background-position: -173px -308px;
+}
+.icon-strikethrough {
+	background-position: -202px -308px;
+}
+.icon-underline {
+	background-position: -231px -308px;
+}
+.icon-table {
+	background-position: -260px -308px;
+}
+.icon-magic {
+	background-position: -289px -308px;
+}
+.icon-truck {
+	background-position: -318px -308px;
+}
+.icon-caret-down {
+	background-position: -346px -308px;
+}
+.icon-caret-up {
+	background-position: -375px -308px;
+}
+.icon-caret-left {
+	background-position: 0 -336px;
+}
+.icon-caret-right {
+	background-position: -29px -336px;
+}
+.icon-columns {
+	background-position: -57px -336px;
+}
+.icon-sort {
+	background-position: -86px -336px;
+}
+.icon-sort-down {
+	background-position: -115px -336px;
+}
+.icon-sort-up {
+	background-position: -144px -336px;
+}
+.icon-envelope-alt {
+	background-position: -173px -336px;
+}
+.icon-undo {
+	background-position: -202px -336px;
+}
+.icon-legal {
+	background-position: -231px -336px;
+}
+.icon-dashboard {
+	background-position: -260px -336px;
+}
+.icon-comment-o {
+	background-position: -289px -336px;
+}
+.icon-comments-o {
+	background-position: -318px -336px;
+}
+.icon-bolt {
+	background-position: -346px -336px;
+}
+.icon-sitemap {
+	background-position: -375px -336px;
+}
+.icon-lightbulb-o {
+	background-position: 0 -364px;
+}
+.icon-exchange {
+	background-position: -29px -364px;
+}
+.icon-suitcase {
+	background-position: -57px -364px;
+}
+.icon-bell-o {
+	background-position: -86px -364px;
+}
+.icon-coffee {
+	background-position: -115px -364px;
+}
+.icon-file-text-o {
+	background-position: -144px -364px;
+}
+.icon-desktop {
+	background-position: -173px -364px;
+}
+.icon-laptop {
+	background-position: -202px -364px;
+}
+.icon-tablet {
+	background-position: -231px -364px;
+}
+.icon-mobile {
+	background-position: -260px -364px;
+}
+.icon-quote-left {
+	background-position: -289px -364px;
+}
+.icon-quote-right {
+	background-position: -318px -364px;
+}
+.icon-spinner {
+	background-position: -346px -364px;
+}
+.icon-reply {
+	background-position: -375px -364px;
+}
+.icon-expand-alt {
+	background-position: 0 -392px;
+}
+.icon-collapse-alt {
+	background-position: -29px -392px;
+}
+.icon-gamepad {
+	background-position: -57px -392px;
+}
+.icon-keyboard {
+	background-position: -86px -392px;
+}
+.icon-flag-alt {
+	background-position: -115px -392px;
+}
+.icon-code {
+	background-position: -144px -392px;
+}
+.icon-location-arrow {
+	background-position: -173px -392px;
+}
+.icon-crop {
+	background-position: -202px -392px;
+}
+.icon-code-fork {
+	background-position: -231px -392px;
+}
+.icon-unlink {
+	background-position: -260px -392px;
+}
+.icon-microphone {
+	background-position: -289px -392px;
+}
+.icon-microphone-off {
+	background-position: -318px -392px;
+}
+.icon-rocket {
+	background-position: -346px -392px;
+}
+.icon-chevron-sign-left {
+	background-position: -375px -392px;
+}
+.icon-chevron-sign-right {
+	background-position: 0 -420px;
+}
+.icon-chevron-sign-up {
+	background-position: -29px -420px;
+}
+.icon-chevron-sign-down {
+	background-position: -57px -420px;
+}
+.icon-unlock-alt {
+	background-position: -86px -420px;
+}
+.icon-bullseye {
+	background-position: -115px -420px;
+}
+.icon-ellipsis-horizontal {
+	background-position: -144px -420px;
+}
+.icon-ellipsis-vertical {
+	background-position: -173px -420px;
+}
+.icon-minus-square {
+	background-position: -202px -420px;
+}
+.icon-minus-square-o {
+	background-position: -231px -420px;
+}
+.icon-file-alt {
+	background-position: -260px -420px;
+}
+.icon-file-text {
+	background-position: -289px -420px;
+}
+.icon-sort-alpha-asc {
+	background-position: -318px -420px;
+}
+.icon-sort-alpha-desc {
+	background-position: -346px -420px;
+}
+.icon-sort-amount-asc {
+	background-position: -375px -420px;
+}
+.icon-sort-amount-desc {
+	background-position: 0 -448px;
+}
+.icon-sort-numeric-asc {
+	background-position: -29px -448px;
+}
+.icon-sort-numeric-desc {
+	background-position: -57px -448px;
+}
+.icon-thumbs-up {
+	background-position: -86px -448px;
+}
+.icon-thumbs-down {
+	background-position: -115px -448px;
+}
+.icon-archive {
+	background-position: -144px -448px;
+}
+.icon-bug {
+	background-position: -173px -448px;
+}
+.icon-plus-square {
+	background-position: -202px -448px;
+}
+.icon-play-circle {
+	background-position: -231px -448px;
+}
+.icon-text-width {
+	background-position: -260px -448px;
+}
+.icon-text-height {
+	background-position: -289px -448px;
+}
+.icon-folder-close-alt {
+	background-position: -318px -448px;
+}
+.icon-folder-open-alt {
+	background-position: -346px -448px;
+}
+.icon-flag-checkered {
+	background-position: -375px -448px;
+}
+.icon-clipboard {
+	background-position: 0 -476px;
+}
