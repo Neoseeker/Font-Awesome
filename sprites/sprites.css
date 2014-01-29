@@ -193,6 +193,7 @@
 }
 .icon-picture {
 	background-position: 0 -112px;
+	width: 15px;
 }
 .icon-pencil {
 	background-position: -29px -112px;
@@ -589,6 +590,7 @@
 }
 .icon-desktop {
 	background-position: -173px -364px;
+	width: 15px;
 }
 .icon-laptop {
 	background-position: -202px -364px;
@@ -619,6 +621,7 @@
 }
 .icon-gamepad {
 	background-position: -57px -392px;
+	width: 15px;
 }
 .icon-keyboard {
 	background-position: -86px -392px;
