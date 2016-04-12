@@ -36,7 +36,7 @@ foreach ($less_content as $line) {
 	if (strpos($line, '/*') !== false || strpos($line, '*/') !== false || strpos($line, '//') !== false) {
 		continue;
 	}
-	if (preg_match('/\.@\{.+\}(-[\w\d\-]+):before/', $line, $matches)) {
+	if (preg_match('/\.@\{.+?\}(-[\w\d\-]+?):before/', $line, $matches)) {
 		$var = $matches[1];
 		echo <<<HTML_STRING
 <div class="col-md3 col-sm-4"><i class="icon{$var}"></i> icon{$var}</div>
