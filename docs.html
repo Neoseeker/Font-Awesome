@@ -31,7 +31,7 @@ Pd_ServiceMap::set_ServiceDefinition('\Neoseeker\Config\NeoServiceDefinition');
 				<div class="row fontawesome-icon-list">
 <?php
 
-$less_content = explode("\n",file_get_contents('../less/icons.less'));
+$less_content = explode("\n",file_get_contents('./less/icons.less'));
 foreach ($less_content as $line) {
 	if (strpos($line, '/*') !== false || strpos($line, '*/') !== false || strpos($line, '//') !== false) {
 		continue;
