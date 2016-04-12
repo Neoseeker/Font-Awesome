@@ -36,11 +36,12 @@ foreach ($less_content as $line) {
 	if (strpos($line, '/*') !== false || strpos($line, '*/') !== false || strpos($line, '//') !== false) {
 		continue;
 	}
-	if (preg_match('/\.@\{.+?\}(-[\w\d\-]+?):before/', $line, $matches)) {
-		$var = $matches[1];
-		echo <<<HTML_STRING
+	if (preg_match_all('/\.@\{.+?\}(-[\w\d\-]+?):before/', $line, $matches)) {
+		foreach ($matches[1] as $var) {
+			echo <<<HTML_STRING
 <div class="col-md3 col-sm-4"><i class="icon{$var}"></i> icon{$var}</div>
 HTML_STRING;
+		}
 	}
 }
 
