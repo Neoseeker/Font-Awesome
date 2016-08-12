@@ -2,12 +2,14 @@
 include 'global_defines.inc.php';
 Pd_ServiceMap::set_ServiceDefinition('\Neoseeker\Config\NeoServiceDefinition');
 \neolib\Asset\Assets::set_asset_definition('\Neoseeker\Config\NeoAssetDefinitions');
+
+$bower_json = json_decode(file_get_contents('./bower.json'));
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0028)http://fontawesome.io/icons/ -->
 <html lang="en" class="wf-museoslab-n3-active wf-museoslab-n5-active wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-n6-active wf-proximanovascosf-n3-active wf-active"><head>
 
-	<title>Font Awesome Icons</title>
+	<title>Font Awesome Icons - v<?php echo $bower_json->version; ?></title>
 
 	<!-- CSS
 	================================================== -->
@@ -27,7 +29,7 @@ Pd_ServiceMap::set_ServiceDefinition('\Neoseeker\Config\NeoServiceDefinition');
 	<div id="wrap">
 		<div class="container">
 		<div id="neoseeker">
-			<h2 class="page-header">Neoseeker Icons <small>Current version: 4.3.0</small></h2>
+			<h2 class="page-header">Neoseeker Icons <small>Current version: <?php echo $bower_json->version; ?></small></h2>
 				<div class="row fontawesome-icon-list">
 <?php
 
