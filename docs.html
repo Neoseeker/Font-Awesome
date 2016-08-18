@@ -19,7 +19,6 @@ $bower_json = json_decode(file_get_contents('./bower.json'));
 	<?php echo \neolib\Asset\Assets::get_css_file('vendor/Font-Awesome43/less/font-awesome.less'); ?>
 
 	<style type="text/css">
-		i { min-width: 16px; }
 		.fontawesome-icon-list em { color: #777; font-size: 0.8em; margin-left: 1em; }/*alias*/
 		.fontawesome-icon-list em.removed { color: red; }
 	</style>
@@ -41,7 +40,7 @@ foreach ($less_content as $line) {
 	if (preg_match_all('/\.@\{.+?\}(-[\w\d\-]+?):before/', $line, $matches)) {
 		foreach ($matches[1] as $var) {
 			echo <<<HTML_STRING
-<div class="col-md3 col-sm-4"><i class="icon{$var}"></i> icon{$var}</div>
+<div class="col-md3 col-sm-4"><i class="icon{$var} icon-fw"></i> icon{$var}</div>
 HTML_STRING;
 		}
 	}
