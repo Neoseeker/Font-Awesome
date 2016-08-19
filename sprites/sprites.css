@@ -492,7 +492,7 @@
 .icon-copy {
 	background-position: -29px -308px;
 }
-.icon-paper-clip {
+.icon-paper-clip,.icon-paperclip {
 	background-position: -57px -308px;
 }
 .icon-save {
@@ -683,7 +683,7 @@
 .icon-minus-square-o {
 	background-position: -231px -420px;
 }
-.icon-file-alt {
+.icon-file,.icon-file-alt {
 	background-position: -260px -420px;
 }
 .icon-file-text {
