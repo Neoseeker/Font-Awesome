@@ -16,7 +16,13 @@ $bower_json = json_decode(file_get_contents('./bower.json'));
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/pygments.css">
-	<?php echo \neolib\Asset\Assets::get_css_file('vendor/Font-Awesome43/less/font-awesome.less'); ?>
+	<?php
+	if (strpos(__DIR__, 'git_assets') !== false) {
+		echo \neolib\Asset\Assets::get_css_file(NEO_STATIC_PATH.'git_assets/Font-Awesome/less/font-awesome.less');
+	} else {
+		echo \neolib\Asset\Assets::get_css_file('vendor/Font-Awesome43/less/font-awesome.less');
+	}
+	?>
 
 	<style type="text/css">
 		.fontawesome-icon-list em { color: #777; font-size: 0.8em; margin-left: 1em; }/*alias*/
