@@ -3,28 +3,32 @@ include 'global_defines.inc.php';
 Pd_ServiceMap::set_ServiceDefinition('\Neoseeker\Config\NeoServiceDefinition');
 \neolib\Asset\Assets::set_asset_definition('\Neoseeker\Config\NeoAssetDefinitions');
 
-$bower_json = json_decode(file_get_contents('./bower.json'));
+$less_vars = file_get_contents('./less/variables.less');
+preg_match('#^@fa-version:\s+"(.+)";$#m', $less_vars, $matches);
+$fontawesome_version = $matches[1];
 ?>
 <!DOCTYPE html>
 <!-- saved from url=(0028)http://fontawesome.io/icons/ -->
 <html lang="en" class="wf-museoslab-n3-active wf-museoslab-n5-active wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-n6-active wf-proximanovascosf-n3-active wf-active"><head>
 
-	<title>Font Awesome Icons - v<?php echo $bower_json->version; ?></title>
+	<title>Font Awesome Icons - v<?php echo $less_vars->version; ?></title>
 
 	<!-- CSS
 	================================================== -->
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/pygments.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 	<?php
 	if (strpos(__DIR__, 'git_assets') !== false) {
 		echo \neolib\Asset\Assets::get_css_file(NEO_STATIC_PATH.'git_assets/Font-Awesome/less/font-awesome.less');
 	} else {
-		echo \neolib\Asset\Assets::get_css_file('vendor/Font-Awesome43/less/font-awesome.less');
+		echo \neolib\Asset\Assets::get_css_file('vendor/Font-Awesome45/less/font-awesome.less');
 	}
 	?>
 
 	<style type="text/css">
+		body { margin-bottom: 100px }
 		.fontawesome-icon-list em { color: #777; font-size: 0.8em; margin-left: 1em; }/*alias*/
 		.fontawesome-icon-list em.removed { color: red; }
 	</style>
@@ -34,7 +38,7 @@ $bower_json = json_decode(file_get_contents('./bower.json'));
 	<div id="wrap">
 		<div class="container">
 		<div id="neoseeker">
-			<h2 class="page-header">Neoseeker Icons <small>Current version: <?php echo $bower_json->version; ?></small></h2>
+			<h2 class="page-header">Neoseeker Icons <small>Current version: <?php echo $fontawesome_version; ?></small></h2>
 				<div class="row fontawesome-icon-list">
 <?php
 
@@ -64,6 +68,16 @@ HTML_STRING;
 				<div class="col-md3 col-sm-4"><i class="icon-hdd-o"></i> icon-hdd-o <em class="removed">icon-hdd</em></div>
 				<div class="col-md3 col-sm-4"><i class="icon-paperclip"></i> icon-paperclip <em class="removed">icon-paper-clip</em></div>
 				<div class="col-md3 col-sm-4"><i class="icon-file"></i> icon-file <em class="removed">icon-file-alt</em></div>
+			</div>
+
+			<h3 class="page-header">Google SVG Icon</h3>
+			<div class="row">
+				<div class="col-md-3 col-sm-4"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="abcRioButtonSvg"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg></div>
+				<div class="col-md-9 col-sm-8">
+					<div class="highlight">
+						<pre><code class="html">&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;18px&quot; height=&quot;18px&quot; viewBox=&quot;0 0 48 48&quot; class=&quot;abcRioButtonSvg&quot;&gt;&lt;g&gt;&lt;path fill=&quot;#EA4335&quot; d=&quot;M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#4285F4&quot; d=&quot;M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#FBBC05&quot; d=&quot;M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;#34A853&quot; d=&quot;M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h48v48H0z&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;gt;</code></pre>
+					</div>
+				</div>
 			</div>
 		  </div>
 
@@ -296,7 +310,7 @@ icon-ban-circle on icon-camera
 							</div>
 						</div>
 						<div class="col-md-9 col-sm-8">
-							<p>Sometimes, we want to combine two icons to make an icon more contextual. Use the <code>icon-stack-sm</code> class on the parent, the <code>icon-stack-1x</code> for the regular sized icon, and <code>icon-stack-mini</code> for the mini icon. Alwayas remember to specify the colour of the mini icon.</p>
+							<p>Sometimes, we want to combine two icons to make an icon more contextual. Use the <code>icon-stack-sm</code> class on the parent, the <code>icon-stack-1x</code> for the regular sized icon, and <code>icon-stack-mini</code> for the mini icon. Always remember to specify the colour of the mini icon.</p>
 							<div class="highlight"><pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-stack-sm"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-envelope icon-stack-1x"</span><span class="nt">&gt;&lt;/i&gt;</span>
 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-plus icon-stack-mini text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -306,6 +320,26 @@ icon-ban-circle on icon-camera
 					</div>
 				</section>
 
+			</div>
+
+			<div id="unused">
+				<h2 class="page-header">Undocumented Icons <small>* These icons are not in our CSS package.</small></h2>
+
+				<div class="row fontawesome-icon-list">
+				<?php
+				foreach ($less_content as $line) {
+					if (strpos($line, '//') !== false) {
+						if (preg_match_all('/\.@\{.+?\}(-[\w\d\-]+?):before/', $line, $matches)) {
+							foreach ($matches[1] as $var) {
+								echo <<<HTML_STRING
+<div class="col-md3 col-sm-4"><i class="fa fa{$var} fa-fw"></i> fa{$var}</div>
+HTML_STRING;
+							}
+						}
+					}
+				}
+				?>
+				</div>
 			</div>
 		</div>
 	</div>
