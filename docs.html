@@ -282,7 +282,8 @@ icon-ban-circle on icon-camera
 			<div class="row fontawesome-icon-list">
 				<?php
 				foreach ($less_content as $line) {
-					if (strpos($line, '//') !== false) {
+					if (strpos($line, '//') !== false && substr($line, -1) === '}') {
+//					\nBase::print_r(strrpos($line, '}'), null, null, false);die;
 						if (preg_match_all('/\.@\{.+?\}(-[\w\d\-]+?):before/', $line, $matches)) {
 							foreach ($matches[1] as $var) {
 								echo <<<HTML_STRING
